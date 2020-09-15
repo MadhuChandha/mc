@@ -3,54 +3,45 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package innerclassdemo;
+import java.util.Scanner;
+public class Main
+{
+abstract class AnonymousInner {
+    abstract void sum();
+}
 
-/**
- *
- * @author HP
- */
-public class anonymousclass {
+class AnonymousInnerMain {
+    public static void main(String args[]){
+        Scanner sn = new Scanner(System.in);
+        System.out.println("Enter two vlaues");
+            int a= Integer.parseInt(sn.nextLine());
+            int b= Integer.parseInt(sn.nextLine()); 
+            int c= Integer.parseInt(sn.nextLine()); 
+        AnonymousInner am = new AnonymousInner(){
+            void sum(){
+                int m= a+b+c;
+                System.out.println("Sum of three number is: "+m);
+            }
+         };
+        am.sum();
+        }
+abstract void product();
+}
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-        sample obj=new sample()
-        {
-          void display()
-          {
-              System.out.println("Anonymous inner class");
-          }
-         
-        };
-        obj.display();
-        sample1 obj1=new sample1()
-        {
-          void display1()
-          {
-              System.out.println("Anonymous inner class");
-          }
-         
-        };
-        obj1.display1();
-        
-    }
-    
+class AnonymousInnerMain {
+    public static void main(String args[]){
+        Scanner sn = new Scanner(System.in);
+        System.out.println("Enter two vlaues");
+            int a= Integer.parseInt(sn.nextLine());
+            int b= Integer.parseInt(sn.nextLine()); 
+            int c= Integer.parseInt(sn.nextLine()); 
+        AnonymousInner an = new AnonymousInner(){
+            void product(){
+                int n= a*b*c;
+                System.out.println("product of three number is: "+m);
+            }
+         };
+        an.product();
+        }
+
 }
-abstract class sample
-{
-    abstract void display();
-    
-}
-abstract class sample1
-{
-abstract void display1();
-}
-/*class test extends sample
-{
-    void display()
-    {
-        
-    }
-}*/
