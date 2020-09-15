@@ -14,13 +14,13 @@ class AnonymousInnerMain {
     public static void main(String args[]){
         Scanner sn = new Scanner(System.in);
         System.out.println("Enter two vlaues");
-            int a= Integer.parseInt(sn.nextLine());
+            int a= Integer.parseInt(sn.nextLine());//getting integer
             int b= Integer.parseInt(sn.nextLine()); 
             int c= Integer.parseInt(sn.nextLine()); 
         AnonymousInner am = new AnonymousInner(){
             void sum(){
                 int m= a+b+c;
-                System.out.println("Sum of three number is: "+m);
+                System.out.println("Sum of three number is: "+m);//sum
             }
          };
         am.sum();
@@ -32,13 +32,13 @@ class AnonymousInnerMain {
     public static void main(String args[]){
         Scanner sn = new Scanner(System.in);
         System.out.println("Enter two vlaues");
-            int a= Integer.parseInt(sn.nextLine());
+            int a= Integer.parseInt(sn.nextLine());//getting integer
             int b= Integer.parseInt(sn.nextLine()); 
             int c= Integer.parseInt(sn.nextLine()); 
         AnonymousInner an = new AnonymousInner(){
             void product(){
                 int n= a*b*c;
-                System.out.println("product of three number is: "+m);
+                System.out.println("product of three number is: "+m);//product
             }
          };
         an.product();
